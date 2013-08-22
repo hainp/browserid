@@ -131,7 +131,7 @@
    */
   .buttonrow a {
     background-color: #fcfcfb;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfb), to(#d8d9d8)));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfb), to(#d8d9d8));
     background-image: -webkit-linear-gradient(top, #fcfcfb, #d8d9d8);
     background-image:    -moz-linear-gradient(top, #fcfcfb, #d8d9d8);
     background-image:     -ms-linear-gradient(top, #fcfcfb, #d8d9d8);
@@ -143,7 +143,7 @@
 
   .buttonrow a:hover,
   .buttonrow a:focus {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfb), to(#ccc)));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfb), to(#ccc));
     background-image: -webkit-linear-gradient(top, #fcfcfb, #ccc);
     background-image:    -moz-linear-gradient(top, #fcfcfb, #ccc);
     background-image:     -ms-linear-gradient(top, #fcfcfb, #ccc);
@@ -152,7 +152,7 @@
   }
 
   .buttonrow a:active {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d8d9d8), to(#fcfcfb)));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d8d9d8), to(#fcfcfb));
     background-image: -webkit-linear-gradient(top, #d8d9d8, #fcfcfb);
     background-image:    -moz-linear-gradient(top, #d8d9d8, #fcfcfb);
     background-image:     -ms-linear-gradient(top, #d8d9d8, #fcfcfb);
@@ -619,6 +619,10 @@
     padding: 10px;
   }
 
+  #error .lighter {
+    color: #fff;
+  }
+
   a.emphasize {
     font-size: 14px;
     padding: 5px;
@@ -653,8 +657,13 @@
    * or else their content is not displayed on mobile devices. See issue #1998
    */
   #error.unsupported, #error.cookies_disabled {
-    position: static;
-    height: 250px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
   }
 
   /**

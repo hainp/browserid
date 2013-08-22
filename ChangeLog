@@ -1,5 +1,25 @@
 current train:
 
+train-2013.08.15
+	* Relax restrictions on siteLogo - allow siteLogo from any https URL or image dataURI: #3705, #3743
+	* Allow CSV list of platforms when running Selenium tests: #3748
+	* Fix mobile layout of unsupported_dialog and cookies_disabled: #3783, #3784, #3785
+	* Record frontend test details in a temp file when run from Selenium tests: #3780
+	* Fix "noSuchWindow" error for new Chrome Selenium driver: #3683, #3788
+	* Fix invalid CSS: #3765, #3791
+	* Ensure include.orig.js is available on the staging and production servers: #3212, #3795
+	* Refactorings and other improvements: #3751, #3683, #3750, #3758, #3759, #3788, #3774
+
+train-2013.07.31
+  * Nicely warn primary IdP users that third-party cookies must be enabled: #3520
+  * Update copy and design of persona emails: #1935
+  * Fix bugs in onmatch and oncancel callbacks: #3701, #3170, #3463
+  * Properly handle primaries when entered with uppercase initial letter in domain: #3728, #3741, #3739, #3729
+  * Improvements to the dialog flow: #3708, #3689, #3609, #3671, #3691
+  * Visual tweaks: #3668, #3677, #3668, #3573, #3662
+  * Test improvements: #3733, #3720, #3719, #3665
+  * Refactorings and other minor improvements: #3694, #3740, #3666, #3695, #3718, #3697, #3630, #3670
+
 train-2013.07.17:
   * Simplify tooltip copy and replace tooltips with inline notifications: #3154, #3607
   * [FXOS] Make TOS/PP links same size as surrounding text: #3634
